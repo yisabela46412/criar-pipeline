@@ -19,7 +19,7 @@ jobs:
         run: test -f style.css
 
       - name: Verificar referencia CSS
-        run: grep -q 'href="estilo.css"' index.html
+        run: grep -q 'href="style.css"' index.html
 
       - name: Construir imagem Docker
         run: docker build -t meu-primeiro-pipeline .
